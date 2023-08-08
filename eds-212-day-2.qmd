@@ -28,3 +28,17 @@ x = 1.2
 d1 = D(fa, "a")
 eval(d1)
 ```
+
+```{r}
+data=penguins
+ggplot(data,
+    aes(data$bill_depth_mm, data$bill_length_mm, col=species))+
+  geom_point()
+```
+
+```{r}
+ggplot(data, aes(flipper_length_mm, species))+
+  geom_jitter()+
+  xlab("Species type")+
+  ylab("Flipper length (mm)")
+```
