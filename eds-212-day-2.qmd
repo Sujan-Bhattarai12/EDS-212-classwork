@@ -5,4 +5,26 @@ format: html
 editor: visual
 ---
 
-## 
+## Classwork Day 1
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+
+```
+
+Find the derivates
+
+```{r}
+fx = expression(x^2)
+x = 3
+d1 = D(fx, "x")
+eval(d1)
+```
+
+```{r}
+fa = expression ( 2 * (3 * (a + 2)) * 4 - 5)
+x = 1.2
+d1 = D(fa, "a")
+eval(d1)
+```
